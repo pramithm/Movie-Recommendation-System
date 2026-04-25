@@ -20,10 +20,10 @@ A machine learning based movie recommendation system that recommends similar mov
 4. Get recommendations
 
 ## Screeshots
-Screeshots/Fretching.png
-Screeshots/Movie Recommendation.png
-Screeshots/Movie Recommendation1.png
-Screeshots/Searching Movies.png
+Screeshots/Fretching.png <br>
+Screeshots/Movie Recommendation.png <br>
+Screeshots/Movie Recommendation1.png<br>
+Screeshots/Searching Movies.png<br>
 Screeshots/Frontend UI.png
 
 

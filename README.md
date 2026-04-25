@@ -19,6 +19,12 @@ A machine learning based movie recommendation system that recommends similar mov
 3. Select a movie
 4. Get recommendations
 
-## Note
-Large generated files like `movies.pkl` and `similarity.pkl` are not uploaded to GitHub.
-Generate them locally before running the project.
+## Screeshots
+Screeshots/Fretching.png
+Screeshots/Movie Recommendation.png
+Screeshots/Movie Recommendation1.png
+Screeshots/Searching Movies.png
+Screeshots/Frontend UI.png
+
+
+

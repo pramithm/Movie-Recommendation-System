@@ -4,14 +4,14 @@ import requests
 
 st.set_page_config(page_title="Movie Recommendation System", page_icon="🎬", layout="wide")
 
-# ---------------- Load Data ----------------
+# ------------ Load Data ---------
 movies = pickle.load(open("movies.pkl", "rb"))
 similarity = pickle.load(open("similarity.pkl", "rb"))
 
 movie_list = movies["title"].values
 
 
-# ---------------- Fetch Poster ----------------
+# ----------- Fetch Poster -----------
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=89214b375dd9a15327af92e478c5bff3&language=en-US"
     response = requests.get(url)
@@ -23,7 +23,7 @@ def fetch_poster(movie_id):
         return "https://via.placeholder.com/500x750?text=No+Image"
 
 
-# ---------------- Recommend Function ----------------
+# ---------- Recommend Function -----------
 def recommend(movie):
     movie_index = movies[movies["title"] == movie].index[0]
 
@@ -40,7 +40,7 @@ def recommend(movie):
     return recommended_movies, recommended_posters
 
 
-# ---------------- Background Orbs Only ----------------
+# ---------- Background Orbs(Waves) Only ------------
 st.markdown("""
 <style>
 /* Fixed background orbs — nothing else changed */
@@ -131,7 +131,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ---------------- Streamlit UI (your original) ----------------
+# -------- Streamlit UI ---------
 st.title("🎬 Movie Recommendation System")
 
 selected_movie_name = st.selectbox(
